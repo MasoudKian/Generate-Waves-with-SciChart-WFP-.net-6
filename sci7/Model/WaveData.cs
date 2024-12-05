@@ -5,5 +5,6 @@
         public double[] XValues { get; set; }
         public double[] YValues { get; set; }
         public string Color { get; set; }
+        public string SeriesName { get; set; } 
     }
 }
