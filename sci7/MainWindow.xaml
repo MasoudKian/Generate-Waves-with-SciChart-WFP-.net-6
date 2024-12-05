@@ -1,0 +1,22 @@
+﻿<Window x:Class="sci7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sci7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="5">
+                <Button Name="GenerateWavesButton" Width="100" Margin="5" Content="Generate Waves" Click="GenerateWavesButton_Click"/>
+                <Button Name="SaveButton" Width="100" Margin="5" Content="Save" Click="SaveButton_Click"/>
+                <Button Name="LoadButton" Width="100" Margin="5" Content="Load" Click="LoadButton_Click"/>
+                <Button Name="ClearScreenButton" Width="100" Margin="5" Content="Clear Screen" Click="ClearScreenButton_Click"/>
+            </StackPanel>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel Name="WaveformContainer" />
+            </ScrollViewer>
+        </DockPanel>
+    </Grid>
+</Window>
